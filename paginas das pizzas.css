@@ -1,0 +1,368 @@
+@font-face {                                                    /*usando font-face posso coloca fontes pesonalizadas proprias*/
+	font-family: 'fontelogo';                                   /* posso nomear a font por minha escolha*/
+	src: url("fonts/CroissantOne-Regular.ttf");                   /* aq coloco nome da font usando otf*/
+}
+
+
+
+body {
+      font-family: 'fontelogo', sans-serif;
+      background-color: black;
+	  color:white;
+    }
+    h1 {
+	  
+	  height:100px;
+	  background-color:white;
+      text-align: center;
+      color: black;
+      font-size: 50px;
+	  text-shadow: 3px 3px 3px black;
+	  box-shadow:3px 3px 3px white;
+	  transition:color 5s;
+    }
+	h1:hover{
+		background-color:#CFB53B;
+		color:white;
+		transition: background-color 5S;
+		
+	}
+    h2 {
+	  margin-top: 40px;
+      text-align: center;
+      color: white;
+      font-size:30px;
+	  text-shadow:3px 3px 3px white;
+    }
+    .container {
+      width: 80%;
+      margin: -35px 150px;
+    }
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+	  border-bottom:2px #606060 solid;
+    }
+    .item {
+      width: 20%;
+	  height:70%;
+      margin: 10px;
+      border: 5px solid #cccccc;
+      box-shadow: 2px 2px 5px #999999;
+	 
+    }
+    .item img {
+	  position:relative;
+      width: 100%;
+      height: 200px;
+	  -webkit-transition:all .5s ease-in;
+	
+    }
+	
+	.item img:hover {
+		-webkit-transform:scale(1.2);
+		
+	}
+	
+    .item h3 {
+      text-align: center;
+      color: #ffffff;
+      background-color: #333333;
+      margin: 0;
+      padding: 10px;
+    }
+    .item p {
+      text-align: center;
+      margin: 10px;
+	  color:black;
+	  background-color:white;
+	  margin:0;
+    }
+    .item span {
+		padding: 3px;
+      font-weight: bold;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 70px;
+	  color:white;
+	  border-top:1px #606060 solid;
+
+    }
+	.footer2{
+	  position:;
+	  text-align:right;
+      margin-top:-120px;
+	  color:white;
+	  
+	  
+	  
+	}
+	.logo img{
+		position:absolute;
+		width:160px;
+		height:205px;
+		top:-10px;
+		left:10px;
+	
+	}
+	.logo2 img{
+		position:absolute;
+		width:160px;
+		height:205px;
+		top:-10px;
+		left:1350px;
+	}
+	/* aq começa a menu do canto esquerdo*/
+	
+	.menu2 h3{
+	    text-align:left;	
+	    color:white;
+	
+	}
+	.menu2{
+		width: 50px;
+		color:white;
+		position:absolute;
+		top:220px;
+		left:-20px;
+		text-transform:uppercase;
+	}
+	.menu2 li{
+		width: 130px;
+		color:black;
+		position:relative;
+		list-style:none;
+		background-color:#dddddd;
+		margin:8px;
+		padding:3px;
+		transition:background-color 1s;
+		border-radius: 50px;
+		text-align: center;
+	}
+	.menu2 li:hover{
+		background-color:#696969;
+	}
+	.menu2 img{
+		width:px;
+		height:px;
+		margin-left:10px;
+		margin-top:20px;
+	}
+	.menu2 img#menu {
+		border:1px solid white;
+		box-shadow:1px 1px 1px white;
+		
+		
+	}
+	.obcevaçao{
+	    text-align:center;
+		width:130px;
+		height:130px;
+		color:white;
+		position:absolute;
+		top:220px;
+		left:1370px;
+	}
+	.obcevaçao h3{
+		text-transform:uppercase;
+	}
+	.obcevaçao img{
+	    width:100px;
+	    height:100px;
+	
+	}
+	.obcevaçao iframe{
+		width:150px;
+		height:130px;
+		background:black;
+		border:none;
+		overflow:none;
+	}
+	
+	.obcevaçao p#taxa{
+		border-bottom:1px solid white;
+	}
+	
+	.obcevaçao p#meia{
+		border-bottom:1px solid white;
+	}
+	
+	fieldset#mensagem{
+    height:350px;
+    width:20px;
+    position:relative;
+    top:-950px;
+    left:-155px;
+    border:none;
+}
+fieldset#mensagem button{
+	background:white;
+	position:relative;
+	left:30px;
+	top:-20px;
+}
+
+/*.whats input{
+	position:relative;
+	width:80px;
+	height:80px;
+	top:-1850px;
+	left:1000px;
+	
+}
+
+.zap input{
+	position:relative;
+	width:80px;
+	height:80px;
+	top:-1930px;
+	left:100px;
+	
+}*/
+#zap1{
+   margin-bottom: -20px;
+	width: 130px;
+}
+
+.item button {
+	position:relative;
+	color:black;
+	width:100%;
+	
+}
+
+
+
+  @media only screen and (max-width: 1200px) {
+    body {
+      font-size: 16px; /* Ajuste o tamanho da fonte para dispositivos menores, se necessário */
+    }
+
+    .container {
+	  align-items: center;
+      width: 100%;
+      margin: 0;
+    }
+	h1{
+		position: relative;
+		left: 200px;
+		transition: color 5s;
+	}
+	h1 :hover{
+		background-color: #CFB53B;
+	}
+	h2{
+		position: relative;
+		left: 200px;
+	}
+
+    .menu {
+		position: relative;
+		left: 140px;
+	    padding-left: 100px;
+        flex-direction: column;
+        align-items: center;
+		gap: 50px;
+	    
+    }
+
+    .item {
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+	
+     width: 80%;
+    }
+
+    .item img {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		-webkit-transition:all .5s ease-in;
+        height: auto;
+    }
+
+	.item img:hover {
+		-webkit-transform:scale(1.2);
+	}
+	.item h3 {
+		font-size: 40px;
+		background-color: #333333;
+        padding: 10px 40px;
+		text-align: center;
+      
+	}
+
+	.item p {
+		font-size: 30px;
+		text-align: center;
+		margin: 0px;
+		color:black;
+		background-color:white;
+	
+	}
+    .footer, .footer2 {
+		position: relative;
+		display: flex;
+		font-size: 20px;
+		text-align: center;
+		left:100px ;
+        margin-top: 20px;
+    }
+
+    .menu2 {
+		margin: 0px;
+	  width: 300px;
+	  font-size: 30px;
+      display:flex;
+	  flex-direction: column;
+	  
+    }
+	.menu2 li {
+		width: 220px;
+	}
+	.menu,li{
+		color: black;
+	}
+
+    .obcevaçao {
+	 font-size: 30px;
+      position: absolute;
+      top:250px;
+      left: 1100px;
+    }
+
+    fieldset#mensagem {
+		display: none;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 20px 0;
+    }
+
+    fieldset#mensagem button {
+		display: none;
+      width: 100%;
+    }
+
+     #zap1{
+	  display: block;
+	  width: 250px;
+	  margin: 20px;
+	  border-radius: 50px;
+	  color: #ffffff;
+	  
+  }
+     #zap1, a{
+       
+	   text-decoration: none;
+}
+.logo2 img{
+	position: absolute;
+	left: 1200px;
+}
+.pedido{
+	width: 100%;
+	margin:0em 2em;
+}
